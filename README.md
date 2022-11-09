@@ -37,7 +37,7 @@ You can run the following command to replicate the results:
 python3 vaecl.py
 ```
 ## Training the VAECL Model
-You can run the following command to train the VAEL model.
+You can run the following command to train the VAECL model.
 ```
 python3 vaecl.py --train True
 ```
