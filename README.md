@@ -25,8 +25,7 @@ rm save_gen.zip
 ## Download the trained VAEL model
 Run the following commands to download the trained VAECL model.
 ```
-cd ..
-cd models
+cd ../models
 gdown https://drive.google.com/uc?id=1lXP8EOSj4HVGa3PAyExQ2h4MQKLZ9H1T
 unzip save
 rm save.zip
