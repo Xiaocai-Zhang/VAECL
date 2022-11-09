@@ -82,10 +82,22 @@ def get_data(dim,reshape=True):
     return x_train, x_val, y_train, y_val, x_test, y_test
 
 def euclideanDistance(x, y):
+    '''
+    claculate the Euclidean Distance between x and y
+    :param x:
+    :param y:
+    :return:
+    '''
     dist = tf.linalg.norm(x - y, axis=1)
     return dist
 
 def contrastive_loss_fn(y_true, y_pred):
+    '''
+    define contrastive loss function
+    :param y_true: label
+    :param y_pred: output features
+    :return: contrastive loss
+    '''
     size = tf.shape(y_true)[0]
 
     first_half_y_true = y_true[:int(size/2)]
@@ -99,7 +111,7 @@ def contrastive_loss_fn(y_true, y_pred):
     label = 1-tf.cast(label, tf.float32)
     label = tf.cast(label, tf.float32)
     dis = euclideanDistance(first_half_y_pred,second_half_y_pred)
-    margin = 1.0
+    margin = 2.0
     t = tf.clip_by_value(margin-dis, clip_value_min=0, clip_value_max=math.inf)
     loss_contrastive = tf.math.reduce_mean((1-label)*tf.math.pow(dis,2)+label*tf.math.pow(t,2))
     return loss_contrastive
