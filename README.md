@@ -1,6 +1,6 @@
 # A Viewpoint Adaptation Ensemble Contrastive Learning Approach for Vessel Type Recognition with Limited Data
 ## Setup
-Code was developed and tested on Ubuntu 18.04 with Python 3.6 and TensorFlow 2.8.0. You can setup a virtual environment by running the code like this:
+Code was developed and tested on Ubuntu 22.04 with Python 3.8 and TensorFlow 2.8.0. You can setup a virtual environment by running the code like this:
 ```
 python3 -m venv env
 source env/bin/activate
