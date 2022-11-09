@@ -4,7 +4,7 @@ Code was developed and tested on Ubuntu 18.04 with Python 3.6 and TensorFlow 2.5
 ```
 virtualenv env
 source env/bin/activate
-cd VAEL
+cd VAECL
 pip3 install -r requirements.txt
 ```
 ## Download the DVTR Dataset
