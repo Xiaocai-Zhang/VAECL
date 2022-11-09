@@ -23,7 +23,7 @@ unzip save_gen
 rm save_gen.zip
 ```
 ## Download the trained VAEL model
-Run the following commands to download the trained VAEL model.
+Run the following commands to download the trained VAECL model.
 ```
 cd ..
 cd models
