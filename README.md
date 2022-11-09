@@ -43,7 +43,6 @@ python3 vaecl.py --train True
 ## Training the C-WDCGAN-GP Model
 You can run the following command to train the C-WDCGAN-GP model.
 ```
-cd ..
-cd c-wdcgan-gp
+cd ../c-wdcgan-gp
 python3 train.py
 ```
