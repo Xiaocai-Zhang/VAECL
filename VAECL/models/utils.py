@@ -85,7 +85,7 @@ def euclideanDistance(x, y):
     dist = tf.linalg.norm(x - y, axis=1)
     return dist
 
-def loss_fn(y_true, y_pred):
+def contrastive_loss_fn(y_true, y_pred):
     size = tf.shape(y_true)[0]
 
     first_half_y_true = y_true[:int(size/2)]
@@ -132,7 +132,7 @@ def train_model(x_train, x_val, y_train, y_val, args, SaveModlFile):
     for layer in base_model.layers:
         layer.trainable = False
     # pre-training
-    model1.compile(optimizer=RMSprop(learning_rate=args.lr), loss=loss_fn, metrics=['accuracy'])
+    model1.compile(optimizer=RMSprop(learning_rate=args.lr), loss=contrastive_loss_fn, metrics=['accuracy'])
     model1.fit(x=x_train, y=y_train, epochs=args.pre_epoch, batch_size=args.batchsize, verbose=1)
 
     model2 = Model(inputs=base_model.input, outputs=predictions_2)

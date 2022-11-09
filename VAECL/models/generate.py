@@ -9,7 +9,6 @@ class config:
     '''
     define parameters & paths
     '''
-    class_num = 4
     size_per_class = 50*20
     noise_dim = 128
     uav_view_generator = '../c-wdcgan-gp/save_gen/UAV-view/generator.h5'

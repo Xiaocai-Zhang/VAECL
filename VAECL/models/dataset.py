@@ -12,13 +12,6 @@ class config:
     '''
     define parameters & paths
     '''
-    train_sample = 50
-
-    save_tanker_source_path = '../DVTR/front-view/TA/'
-    save_container_source_path = '../DVTR/front-view/CS/'
-    save_bulkcarrier_source_path = '../DVTR/front-view/BC/'
-    save_generalcargo_source_path = '../DVTR/front-view/GC/'
-
     save_tanker_target_train_path = '../DVTR/UAV-view/train/TA/'
     save_tanker_target_test_path = '../DVTR/UAV-view/test/TA/'
     save_container_target_train_path = '../DVTR/UAV-view/train/CS/'

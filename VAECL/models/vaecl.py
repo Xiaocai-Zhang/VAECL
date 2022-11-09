@@ -12,8 +12,8 @@ parser.add_argument('--lr', type = float, default = 0.0001, help = 'learning rat
 parser.add_argument('--S', type = int, default = 256, help = 'pixel size of the input image for CNN1')
 parser.add_argument('--M', type = int, default = 512, help = 'pixel size of the input image for CNN2')
 parser.add_argument('--train', type = bool, default = False, help = 'training or not')
-parser.add_argument('--SaveModlFile_1', type = str, default = "./save/model_v5_b1_tune.h5", help = 'save path for CNN1')
-parser.add_argument('--SaveModlFile_2', type = str, default = "./save/model_v5_b2_tune.h5", help = 'save path for CNN2')
+parser.add_argument('--SaveModlFile_1', type = str, default = "./save/model_cnn1.h5", help = 'save path for CNN1')
+parser.add_argument('--SaveModlFile_2', type = str, default = "./save/model_cnn2.h5", help = 'save path for CNN2')
 
 
 if __name__ == '__main__':
