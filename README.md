@@ -39,7 +39,7 @@ python3 vaecl.py
 ## Training the VAECL Model
 You can run the following command to train the VAEL model.
 ```
-python3 vaeCl.py --train True
+python3 vaecl.py --train True
 ```
 ## Training the C-WDCGAN-GP Model
 You can run the following command to train the C-WDCGAN-GP model.
