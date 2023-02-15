@@ -14,7 +14,6 @@ class Discriminator(tf.keras.Model):
         self.conv4 = tf.keras.layers.Conv2D(256, 5, 2, activation=tf.nn.leaky_relu)
         self.dropout4 = tf.keras.layers.Dropout(0.3)
         self.flatten = tf.keras.layers.Flatten()
-        # self.fc1 = tf.keras.layers.Dense(16, activation = tf.nn.leaky_relu)
         self.fc1 = tf.keras.layers.Dense(1)
 
     def call(self, x):
