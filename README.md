@@ -14,7 +14,7 @@ gdown https://drive.google.com/uc?id=132b9OeYS_lWbTjYuKXvmqIhPobCAREnq
 unzip DVTR
 rm DVTR.zip
 ```
-If the download is not working, pleae use the following link to manually download it
+If the download is not working, pleae use the following link to manually download the dataset
 ```
 https://drive.google.com/uc?id=132b9OeYS_lWbTjYuKXvmqIhPobCAREnq
 ```
@@ -26,6 +26,10 @@ gdown https://drive.google.com/uc?id=1u8IDDmBvVMHenREeUkklGdhZ3RskqB7I
 unzip save_gen
 rm save_gen.zip
 ```
+If the download is not working, pleae use the following link to manually download the generator
+```
+https://drive.google.com/uc?id=1u8IDDmBvVMHenREeUkklGdhZ3RskqB7I
+```
 ## Download the trained VAEL model
 Run the following commands to download the trained VAECL model.
 ```
@@ -33,6 +37,10 @@ cd ../models
 gdown https://drive.google.com/uc?id=1lXP8EOSj4HVGa3PAyExQ2h4MQKLZ9H1T
 unzip save
 rm save.zip
+```
+If the download is not working, pleae use the following link to manually download the model
+```
+https://drive.google.com/uc?id=1lXP8EOSj4HVGa3PAyExQ2h4MQKLZ9H1T
 ```
 ## Running Model
 You can run the following command to replicate the results:
