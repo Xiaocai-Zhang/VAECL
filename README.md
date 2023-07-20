@@ -14,6 +14,10 @@ gdown https://drive.google.com/uc?id=132b9OeYS_lWbTjYuKXvmqIhPobCAREnq
 unzip DVTR
 rm DVTR.zip
 ```
+If the download is not working, pleae use the following link to manually download it
+```
+https://drive.google.com/uc?id=132b9OeYS_lWbTjYuKXvmqIhPobCAREnq
+```
 ## Download the trained generator
 Run the following commands to download the trained generator.
 ```
